@@ -1,0 +1,27 @@
+.site-header-logo {
+  width: 135px;
+  height: auto;
+  max-height: 112px;
+  object-fit: contain;
+  display: block;
+}
+
+.site-footer-logo {
+  width: 170px;
+  height: auto;
+  max-height: 138px;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .site-header-logo {
+    width: 96px;
+    max-height: 82px;
+  }
+
+  .site-footer-logo {
+    width: 135px;
+    max-height: 112px;
+  }
+}

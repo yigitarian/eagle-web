@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="tr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="EAGLE Chinese Gastro & Sushi menü — Sushi set menüleri, çorbalar, Uzak Doğu lezzetleri. Şişli Bomonti, İstanbul."/>
+<title>Menü | EAGLE Chinese Gastro & Sushi</title>
+<link rel="canonical" href="https://eaglechinese.com.tr/menu.html"/>
+<link rel="alternate" hreflang="tr" href="https://eaglechinese.com.tr/menu.html"/>
+<link rel="alternate" hreflang="en" href="https://eaglechinese.com.tr/menu-en.html"/>
+<link rel="alternate" hreflang="x-default" href="https://eaglechinese.com.tr/menu.html"/>
+<link rel="icon" type="image/png" href="logo-crop.png"/>
+<link rel="apple-touch-icon" href="logo-crop.png"/>
+<meta name="theme-color" content="#CC0000"/>
+<meta name="robots" content="index, follow"/>
+<!-- Open Graph -->
+<meta property="og:type" content="restaurant"/>
+<meta property="og:site_name" content="EAGLE Chinese Gastro & Sushi"/>
+<meta property="og:locale" content="tr_TR"/>
+<meta property="og:title" content="Menü | EAGLE Chinese Gastro &amp; Sushi"/>
+<meta property="og:description" content="EAGLE Chinese Gastro &amp; Sushi menü — Sushi set menüleri, çorbalar, Uzak Doğu lezzetleri. Şişli Bomonti, İstanbul."/>
+<meta property="og:url" content="https://eaglechinese.com.tr/menu.html"/>
+<meta property="og:image" content="https://lh3.googleusercontent.com/aida-public/AB6AXuB6YeN7KV7b-M-hf1F52czT_n1Kzce6xHisAbMmFkKxcRMgQHjmVfqm2P0vjJzUwiEgpsAowgAbzE4THIurjdUhoi_koCTOzp_0pKu0WaBtUNixo0SCc3OVcKMz2Fa7CD6dDWWBF0ruXTW-0780ebe8VTgzzFvL5kzeLuadsAg7QhTMYvFND886QO0lj0Wzt4O5BvrfM_XYMLul42lgtfE8naEZgv3dEo8R1JWsPhCmYiT7zufZ7zhGZg"/>
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Menü | EAGLE Chinese Gastro &amp; Sushi"/>
+<meta name="twitter:description" content="EAGLE Chinese Gastro &amp; Sushi menü — Sushi set menüleri, çorbalar, Uzak Doğu lezzetleri. Şişli Bomonti, İstanbul."/>
+<meta name="twitter:image" content="https://lh3.googleusercontent.com/aida-public/AB6AXuB6YeN7KV7b-M-hf1F52czT_n1Kzce6xHisAbMmFkKxcRMgQHjmVfqm2P0vjJzUwiEgpsAowgAbzE4THIurjdUhoi_koCTOzp_0pKu0WaBtUNixo0SCc3OVcKMz2Fa7CD6dDWWBF0ruXTW-0780ebe8VTgzzFvL5kzeLuadsAg7QhTMYvFND886QO0lj0Wzt4O5BvrfM_XYMLul42lgtfE8naEZgv3dEo8R1JWsPhCmYiT7zufZ7zhGZg"/>
+
+<link rel="stylesheet" href="tailwind.css"/>
+<link rel="stylesheet" href="site.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<style>
+  .custom-scrollbar::-webkit-scrollbar { height: 2px; }
+  .custom-scrollbar::-webkit-scrollbar-thumb { background: #CC0000; border-radius: 2px; }
+  .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+  [data-cat] { display:none; opacity:0; transform:translateY(8px); transition:opacity .45s ease, transform .45s ease; }
+  [data-cat].cat-active { display:block; opacity:1; transform:translateY(0); }
+  .cat-btn { border-bottom: 2px solid transparent; color: rgb(93 63 60); transition: color .25s, border-color .25s; cursor: pointer; }
+  .cat-btn.active { color:#CC0000; border-bottom-color:#CC0000; }
+  .cat-btn:hover:not(.active) { color: #1b1c1c; }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary selection:text-on-primary">
+
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/20 shadow-sm">
+  <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-3 max-w-container-max mx-auto">
+    <a href="index.html" class="flex items-center" aria-label="Ana sayfaya dön">
+      <img src="logo-crop.png" alt="EAGLE Chinese Gastro & Sushi" class="site-header-logo"/>
+    </a>
+    <ul class="hidden md:flex items-center gap-8 font-label-lg text-label-lg uppercase tracking-[0.12em]">
+      <li><a class="nav-link-active" href="menu.html">Menü</a></li>
+      <li><a class="nav-link cursor-pointer" onclick="document.getElementById('delivery-modal').classList.remove('hidden')">Online Sipariş</a></li>
+      <li><a class="nav-link" href="galeri.html">Galeri</a></li>
+      <li><a class="nav-link" href="hakkimizda.html">Hakkımızda</a></li>
+      <li><a class="nav-link" href="iletisim.html">İletişim</a></li>
+    </ul>
+    <div class="flex items-center gap-4">
+      <span class="hidden md:flex items-center gap-1.5 font-label-sm text-label-sm select-none">
+        <span class="text-primary font-bold">TR</span>
+        <span class="text-outline-variant">|</span>
+        <a href="menu-en.html" class="text-on-surface-variant hover:text-primary transition-colors">EN</a>
+      </span>
+      <a href="tel:+902122191060" class="hidden md:inline-block border border-primary text-primary px-5 py-2 font-label-lg text-label-lg uppercase tracking-[0.12em] text-xs hover:bg-primary hover:text-on-primary transition-all duration-300">
+        <span class="material-symbols-outlined text-base align-middle mr-1">call</span>Ara
+      </a>
+      <button id="menu-toggle" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden text-on-surface">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+      </button>
+    </div>
+  </div>
+  <ul id="mobile-menu" class="hidden md:hidden flex-col gap-4 px-margin-mobile pb-6 bg-surface/95 backdrop-blur-md border-t border-outline-variant/20 font-label-lg tracking-[0.12em] uppercase">
+    <li><a class="block py-2 text-primary font-bold" href="menu.html">Menü</a></li>
+    <li><a class="block py-2 text-on-surface-variant cursor-pointer" onclick="document.getElementById('delivery-modal').classList.remove('hidden')">Online Sipariş</a></li>
+    <li><a class="block py-2 text-on-surface-variant" href="galeri.html">Galeri</a></li>
+    <li><a class="block py-2 text-on-surface-variant" href="hakkimizda.html">Hakkımızda</a></li>
+    <li><a class="block py-2 text-on-surface-variant" href="iletisim.html">İletişim</a></li>
+    <li><a class="block py-2 text-primary font-bold" href="tel:+902122191060">+90 (212) 219 10 60</a></li>
+  </ul>
+</nav>
+
+<main class="pt-24">
+  <!-- Header -->
+  <header class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-16 text-center">
+    <span class="section-label text-center">— Gerçek Lezzetler</span>
+    <h1 class="font-display-lg text-[40px] md:text-[56px] mb-6 font-bold">Menümüz</h1>
+    <div class="w-12 h-0.5 bg-primary mx-auto"></div>
+  </header>
+
+  <!-- Category filter bar — sticky -->
+  <div class="sticky top-[72px] z-40 bg-surface/95 backdrop-blur-md border-b border-outline-variant/10 shadow-sm">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop overflow-x-auto custom-scrollbar">
+      <div class="flex items-center gap-6 md:gap-8 py-4 min-w-max" id="cat-tabs">
+        <button class="cat-btn active font-label-lg text-label-lg uppercase tracking-[0.12em] pb-2 whitespace-nowrap" data-target="sushi-set">Sushi Set</button>
+        <button class="cat-btn font-label-lg text-label-lg uppercase tracking-[0.12em] pb-2 whitespace-nowrap text-on-surface-variant" data-target="maki">Maki & Rolls</button>
+        <button class="cat-btn font-label-lg text-label-lg uppercase tracking-[0.12em] pb-2 whitespace-nowrap text-on-surface-variant" data-target="starters">Başlangıçlar</button>
+        <button class="cat-btn font-label-lg text-label-lg uppercase tracking-[0.12em] pb-2 whitespace-nowrap text-on-surface-variant" data-target="soups">Çorbalar</button>
+        <button class="cat-btn font-label-lg text-label-lg uppercase tracking-[0.12em] pb-2 whitespace-nowrap text-on-surface-variant" data-target="noodles">Noodles & Udon</button>
+        <button class="cat-btn font-label-lg text-label-lg uppercase tracking-[0.12em] pb-2 whitespace-nowrap text-on-surface-variant" data-target="rice">Pilavlar</button>
+        <button class="cat-btn font-label-lg text-label-lg uppercase tracking-[0.12em] pb-2 whitespace-nowrap text-on-surface-variant" data-target="chicken">Tavuk</button>
+        <button class="cat-btn font-label-lg text-label-lg uppercase tracking-[0.12em] pb-2 whitespace-nowrap text-on-surface-variant" data-target="beef">Dana</button>
+        <button class="cat-btn font-label-lg text-label-lg uppercase tracking-[0.12em] pb-2 whitespace-nowrap text-on-surface-variant" data-target="seafood">Deniz Ürünleri</button>
+        <button class="cat-btn font-label-lg text-label-lg uppercase tracking-[0.12em] pb-2 whitespace-nowrap text-on-surface-variant" data-target="other">Diğer</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu content -->
+  <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 mb-24 min-h-[55vh]">
+
+    <!-- Sushi Set Menü + Sashimi -->
+    <div class="cat-active" data-cat="sushi-set">
+      <h2 class="font-headline-lg text-[28px] md:text-[36px] italic text-on-surface/80 text-center mb-14 font-bold">Sushi Set Menü</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 mb-16">
+        <div>
+          <div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3">
+            <h3 class="font-headline-md text-[20px] font-semibold">Makimono Sushi <span class="text-sm font-normal text-on-surface-variant">(24 Pcs.)</span></h3>
+            
+          </div>
+        </div>
+        <div>
+          <div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3">
+            <h3 class="font-headline-md text-[20px] font-semibold">Eagle Special Sushi <span class="text-sm font-normal text-on-surface-variant">(30 Pcs.)</span></h3>
+            
+          </div>
+        </div>
+        <div>
+          <div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3">
+            <h3 class="font-headline-md text-[20px] font-semibold">California Lovers <span class="text-sm font-normal text-on-surface-variant">(24 Pcs.)</span></h3>
+            
+          </div>
+        </div>
+        <div>
+          <div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3">
+            <h3 class="font-headline-md text-[20px] font-semibold">Double Star Sushi <span class="text-sm font-normal text-on-surface-variant">(16 Pcs.)</span></h3>
+            
+          </div>
+        </div>
+        <div>
+          <div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3">
+            <h3 class="font-headline-md text-[20px] font-semibold">Sushi Dreams Sushi <span class="text-sm font-normal text-on-surface-variant">(24 Pcs.)</span></h3>
+            
+          </div>
+        </div>
+      </div>
+
+      <h2 class="font-headline-lg text-[24px] md:text-[30px] italic text-on-surface/80 text-center mb-10 font-bold">Sashimi Set Menü</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10">
+        <div>
+          <div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3">
+            <h3 class="font-headline-md text-[20px] font-semibold">Sake Sashimi Sushi <span class="text-sm font-normal text-on-surface-variant">(5 Pcs.)</span></h3>
+            
+          </div>
+        </div>
+        <div>
+          <div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3">
+            <h3 class="font-headline-md text-[20px] font-semibold">Unagi Sashimi Sushi <span class="text-sm font-normal text-on-surface-variant">(5 Pcs.)</span></h3>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Maki & Rolls -->
+    <div data-cat="maki">
+      <h2 class="font-headline-lg text-[28px] md:text-[36px] italic text-on-surface/80 text-center mb-14 font-bold">Maki Rolls</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 mb-16">
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Avocado Maki <span class="text-sm font-normal text-on-surface-variant">(6 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Ebi Maki <span class="text-sm font-normal text-on-surface-variant">(6 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Kani Maki <span class="text-sm font-normal text-on-surface-variant">(6 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Kappa Maki <span class="text-sm font-normal text-on-surface-variant">(6 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Sake Maki <span class="text-sm font-normal text-on-surface-variant">(6 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Yasai Maki <span class="text-sm font-normal text-on-surface-variant">(6 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Unagi Maki <span class="text-sm font-normal text-on-surface-variant">(6 Pcs.)</span></h3></div></div>
+      </div>
+
+      <h2 class="font-headline-lg text-[24px] md:text-[30px] italic text-on-surface/80 text-center mb-10 font-bold">Nigiris</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 mb-16">
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Kani Nigiri <span class="text-sm font-normal text-on-surface-variant">(2 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Sake Nigiri <span class="text-sm font-normal text-on-surface-variant">(2 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Unagi Nigiri <span class="text-sm font-normal text-on-surface-variant">(2 Pcs.)</span></h3></div></div>
+      </div>
+
+      <h2 class="font-headline-lg text-[24px] md:text-[30px] italic text-on-surface/80 text-center mb-10 font-bold">Uramaki Rolls</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 mb-16">
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">California Roll <span class="text-sm font-normal text-on-surface-variant">(6 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Canadian Roll <span class="text-sm font-normal text-on-surface-variant">(6 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Boston Roll <span class="text-sm font-normal text-on-surface-variant">(6 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Philadelphia Roll <span class="text-sm font-normal text-on-surface-variant">(6 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Rainbow Roll <span class="text-sm font-normal text-on-surface-variant">(6 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Dragon Roll <span class="text-sm font-normal text-on-surface-variant">(6 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">California Salmon Roll <span class="text-sm font-normal text-on-surface-variant">(6 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Alaska Roll <span class="text-sm font-normal text-on-surface-variant">(6 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Crunchy Roll <span class="text-sm font-normal text-on-surface-variant">(6 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Yasai Roll <span class="text-sm font-normal text-on-surface-variant">(6 Pcs.)</span></h3></div></div>
+      </div>
+
+      <h2 class="font-headline-lg text-[24px] md:text-[30px] italic text-on-surface/80 text-center mb-10 font-bold">Special Rolls</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 mb-16">
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Special Boston Roll <span class="text-sm font-normal text-on-surface-variant">(8 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Eagle Roll <span class="text-sm font-normal text-on-surface-variant">(8 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Volcano Roll <span class="text-sm font-normal text-on-surface-variant">(8 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Dynamite Shrimp Roll <span class="text-sm font-normal text-on-surface-variant">(8 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Bomonti Roll <span class="text-sm font-normal text-on-surface-variant">(8 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Crispy Roll <span class="text-sm font-normal text-on-surface-variant">(8 Pcs.)</span></h3></div></div>
+      </div>
+
+      <h2 class="font-headline-lg text-[24px] md:text-[30px] italic text-on-surface/80 text-center mb-10 font-bold">Fried Rolls</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10">
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Deep Fried Salmon Roll <span class="text-sm font-normal text-on-surface-variant">(6 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Fried Alaska Roll <span class="text-sm font-normal text-on-surface-variant">(6 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Fried Philadelphia Roll <span class="text-sm font-normal text-on-surface-variant">(6 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Fried Crunchy Roll <span class="text-sm font-normal text-on-surface-variant">(6 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Fried California Roll <span class="text-sm font-normal text-on-surface-variant">(6 Pcs.)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Fried Shrimp Roll <span class="text-sm font-normal text-on-surface-variant">(6 Pcs.)</span></h3></div></div>
+      </div>
+    </div>
+
+    <!-- Başlangıçlar + Edamame -->
+    <div data-cat="starters">
+      <h2 class="font-headline-lg text-[28px] md:text-[36px] italic text-on-surface/80 text-center mb-14 font-bold">Başlangıçlar</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 mb-16">
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Sebzeli Buharda Çin Mantısı <span class="text-sm font-normal text-on-surface-variant">(5 Adet)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Fish'n Chips</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Çin Böreği <span class="text-sm font-normal text-on-surface-variant">(3 Adet)</span></h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Sebzeli Çıtır Mantı & Crispy Wonton</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Çıtır Tavuk</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Dynamite Kalamar</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Eggplant Tempura</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Karides Cipsi</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Susamlı Tavuk</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Tempura Karides</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Çıtır Kanat</h3></div></div>
+      </div>
+
+      <h2 class="font-headline-lg text-[24px] md:text-[30px] italic text-on-surface/80 text-center mb-10 font-bold">Edamame</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10">
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Edamame</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Acı Soslu Sarımsaklı Edamame</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Tatlı Ekşi Soslu Edamame</h3></div></div>
+      </div>
+    </div>
+
+    <!-- Çorbalar -->
+    <div data-cat="soups">
+      <h2 class="font-headline-lg text-[28px] md:text-[36px] italic text-on-surface/80 text-center mb-14 font-bold">Çorbalar</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10">
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Sebze Çorbası</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Tavuklu & Acılı & Ekşili Çorba</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Tavuklu Mısırlı Çorba</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Dana Etli Acılı Ekşili Çorba</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Karidesli Acılı Ekşili Çorba</h3></div></div>
+      </div>
+    </div>
+
+    <!-- Noodles & Udon & Soba -->
+    <div data-cat="noodles">
+      <h2 class="font-headline-lg text-[28px] md:text-[36px] italic text-on-surface/80 text-center mb-14 font-bold">Noodles</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 mb-16">
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Sebzeli Noodle</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Tavuklu Noodle</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Etli Noodle</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Karidesli Noodle</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Karışık Noodle</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Teriyaki Soslu Sebzeli Noodle</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Teriyaki Soslu Tavuklu Noodle</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Teriyaki Soslu Etli Noodle</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Teriyaki Soslu Karidesli Noodle</h3></div></div>
+      </div>
+
+      <h2 class="font-headline-lg text-[24px] md:text-[30px] italic text-on-surface/80 text-center mb-10 font-bold">Fried Ramens</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 mb-16">
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Sebzeli Ramen</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Tavuklu Ramen</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Etli Ramen</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Karidesli Ramen</h3></div></div>
+      </div>
+
+      <h2 class="font-headline-lg text-[24px] md:text-[30px] italic text-on-surface/80 text-center mb-10 font-bold">Udons</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 mb-16">
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Sebzeli Udon</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Tavuklu Udon</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Etli Udon</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Karidesli Udon</h3></div></div>
+      </div>
+
+      <h2 class="font-headline-lg text-[24px] md:text-[30px] italic text-on-surface/80 text-center mb-10 font-bold">Soba Noodles</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10">
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Sebzeli Soba Noodle</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Tavuklu Soba Noodle</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Etli Soba Noodle</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Karidesli Soba Noodle</h3></div></div>
+      </div>
+    </div>
+
+    <!-- Pilavlar -->
+    <div data-cat="rice">
+      <h2 class="font-headline-lg text-[28px] md:text-[36px] italic text-on-surface/80 text-center mb-14 font-bold">Pilavlar</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10">
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Buharda Sade Pilav</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Sebzeli Pilav</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Körili Pilav</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Sebzeli Yumurtalı Pilav</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Tavuklu Pilav</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Etli Pilav</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Karidesli Pilav</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Karışık Pilav</h3></div></div>
+      </div>
+    </div>
+
+    <!-- Tavuk Etli Yemekler -->
+    <div data-cat="chicken">
+      <h2 class="font-headline-lg text-[28px] md:text-[36px] italic text-on-surface/80 text-center mb-14 font-bold">Tavuk Etli Yemekler</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10">
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Acılı Kızarmış Tavuk</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Brokolili Tavuk</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">General Tso Tavuk</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">İstiridye Soslu Kızarmış Tavuk</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Ballı Sarımsaklı Tavuk</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Mançuryan Usulü Kızarmış Tavuk</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Tatlı Ekşi Soslu Kızarmış Tavuk</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Zencefil Soslu Kızarmış Tavuk</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Mongolian Chicken</h3></div></div>
+      </div>
+    </div>
+
+    <!-- Dana Etli Yemekler -->
+    <div data-cat="beef">
+      <h2 class="font-headline-lg text-[28px] md:text-[36px] italic text-on-surface/80 text-center mb-14 font-bold">Dana Etli Yemekler</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10">
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">General Tso Dana Eti</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Mançuryan Usulü Kızarmış Dana Eti</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Acılı Dana Eti</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Brokolili Dana Eti</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Tatlı Ekşi Soslu Kızarmış Dana Eti</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Teriyaki Soslu Dana Eti</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Ballı Sarımsaklı Dana Eti</h3></div></div>
+      </div>
+    </div>
+
+    <!-- Deniz Ürünleri -->
+    <div data-cat="seafood">
+      <h2 class="font-headline-lg text-[28px] md:text-[36px] italic text-on-surface/80 text-center mb-14 font-bold">Deniz Ürünleri</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10">
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Zencefil Soslu Çıtır Balık</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Acı Soslu Kızarmış Karides</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Acı Soslu Kızarmış Balık</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Zencefil Soslu Kızarmış Karides</h3></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h3 class="font-headline-md text-[20px] font-semibold">Teriyaki Soslu Somon</h3></div></div>
+      </div>
+    </div>
+
+    <!-- Diğer: Sebzeler, Ördekler, Salatalar, Tatlılar, İçecekler -->
+    <div data-cat="other">
+      <h2 class="font-headline-lg text-[28px] md:text-[36px] italic text-on-surface/80 text-center mb-14 font-bold">Diğer</h2>
+
+      <h3 class="font-headline-md text-[20px] uppercase tracking-wider text-on-surface/50 mb-6 font-semibold">Sebzeler & Ördekler</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 mb-12">
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h4 class="font-headline-md text-[20px] font-semibold">Karışık Sebze</h4></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h4 class="font-headline-md text-[20px] font-semibold">Sarımsak Soslu Brokoli</h4></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h4 class="font-headline-md text-[20px] font-semibold">Kızarmış Pekin Ördeği (Yarım)</h4></div></div>
+      </div>
+
+      <h3 class="font-headline-md text-[20px] uppercase tracking-wider text-on-surface/50 mb-6 font-semibold">Salatalar</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 mb-12">
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h4 class="font-headline-md text-[20px] font-semibold">Lahana Salatası</h4></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h4 class="font-headline-md text-[20px] font-semibold">Yosun Salatası</h4></div></div>
+      </div>
+
+      <h3 class="font-headline-md text-[20px] uppercase tracking-wider text-on-surface/50 mb-6 font-semibold">Tatlılar</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 mb-12">
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h4 class="font-headline-md text-[20px] font-semibold">Ballı Çikolatalı Kızarmış Ananas</h4></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h4 class="font-headline-md text-[20px] font-semibold">Ballı Çikolatalı Kızarmış Dondurma</h4></div></div>
+      </div>
+
+      <h3 class="font-headline-md text-[20px] uppercase tracking-wider text-on-surface/50 mb-6 font-semibold">İçecekler</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10">
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h4 class="font-headline-md text-[20px] font-semibold">Pepsi (33 cl.)</h4></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h4 class="font-headline-md text-[20px] font-semibold">Pepsi Max (33 cl.)</h4></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h4 class="font-headline-md text-[20px] font-semibold">Yedigün (33 cl.)</h4></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h4 class="font-headline-md text-[20px] font-semibold">7Up (33 cl.)</h4></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h4 class="font-headline-md text-[20px] font-semibold">Lipton Ice Tea (33 cl.)</h4></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h4 class="font-headline-md text-[20px] font-semibold">Uludağ Premium Soda (25 cl.)</h4></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h4 class="font-headline-md text-[20px] font-semibold">Tropicana Karışık (33 cl.)</h4></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h4 class="font-headline-md text-[20px] font-semibold">Tropicana Nektari (33 cl.)</h4></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h4 class="font-headline-md text-[20px] font-semibold">Tropicana Vişne (33 cl.)</h4></div></div>
+        <div><div class="flex items-baseline mb-3 border-b border-outline-variant/30 pb-3"><h4 class="font-headline-md text-[20px] font-semibold">Su (50 cl.)</h4></div></div>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-on-surface text-surface pt-16 pb-8">
+  <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+
+    <!-- Logo + kolonlar -->
+    <div class="flex flex-col md:flex-row md:items-start gap-12 md:gap-20 mb-14">
+
+      <!-- Logo bloğu -->
+      <div class="flex-shrink-0">
+        <img src="logo-footer-white.png" alt="EAGLE Chinese Gastro & Sushi" class="site-footer-logo"/>
+        <p class="text-surface/60 text-sm leading-relaxed mt-5 max-w-[220px]">Şişli Bomonti'nin kalbinde,<br/>2013'ten bu yana sushi ve Uzak Doğu lezzetleri.</p>
+      </div>
+
+      <!-- Link kolonları -->
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-10 flex-grow">
+
+        <div>
+          <h4 class="text-surface/60 uppercase tracking-[0.18em] text-xs font-semibold mb-5">Sayfalar</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a class="text-surface/80 hover:text-primary transition-colors" href="index.html">Ana Sayfa</a></li>
+            <li><a class="text-surface/80 hover:text-primary transition-colors" href="menu.html">Menü</a></li>
+            <li><a class="text-surface/80 hover:text-primary transition-colors" href="galeri.html">Galeri</a></li>
+            <li><a class="text-surface/80 hover:text-primary transition-colors" href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a class="text-surface/80 hover:text-primary transition-colors" href="iletisim.html">İletişim</a></li>
+            <li><a class="text-surface/80 hover:text-primary transition-colors" href="iletisim.html#rezervasyon">Rezervasyon</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-surface/60 uppercase tracking-[0.18em] text-xs font-semibold mb-5">İletişim</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="text-surface/80 leading-relaxed">Sıracevizler Cad. Huzur Sk. No:15/A<br/>Bomonti, Şişli / İstanbul</li>
+            <li><a class="text-surface/80 hover:text-primary transition-colors" href="tel:+902122191060">+90 (212) 219 10 60</a></li>
+            <li><a class="text-surface/80 hover:text-primary transition-colors" href="mailto:info@eaglechinese.com.tr">info@eaglechinese.com.tr</a></li>
+            <li class="text-surface/60 text-xs leading-relaxed pt-1">Pzt–Cmt 11:00–23:00 &nbsp;·&nbsp; Pazar 12:00–23:00</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-surface/60 uppercase tracking-[0.18em] text-xs font-semibold mb-5">Sosyal &amp; Sipariş</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a class="text-surface/80 hover:text-primary transition-colors" href="https://www.instagram.com/eaglebomonti/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a class="text-surface/80 hover:text-primary transition-colors" href="https://www.facebook.com/EagleChineseGastro/" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a class="text-surface/80 hover:text-primary transition-colors" href="https://www.tripadvisor.com/Restaurant_Review-g293974-d8706764-Reviews-Eagle_Chinese_Gastro-Istanbul.html" target="_blank" rel="noopener">TripAdvisor</a></li>
+            <li><a class="text-surface/80 hover:text-primary transition-colors" href="https://www.yemeksepeti.com/restaurant/ie1j/eagle-chinese-gastro-and-sushi-ie1j" target="_blank" rel="noopener">Yemeksepeti</a></li>
+            <li><a class="text-surface/80 hover:text-primary transition-colors" href="https://getir.com/yemek/restoran/eagle-chinese-gastro-sushi-merkez-mah-sisli-istanbul/" target="_blank" rel="noopener">Getir</a></li>
+            <li><a class="text-surface/80 hover:text-primary transition-colors" href="https://www.migros.com.tr/yemek/eagle-chinese-gastro-sushi-sisli-cumhuriyet-mah-st-18b54" target="_blank" rel="noopener">Migros Yemek</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Alt bar -->
+    <div class="border-t border-surface/15 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-[11px] text-surface/45 uppercase tracking-[0.2em]">
+      <span>© 2026 Eagle Chinese Gastro &amp; Sushi</span>
+      <a class="hover:text-primary transition-colors" href="kvkk.html">KVKK</a>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+  // Mobile menu
+  (function () {
+    const btn = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    if (!btn || !menu) return;
+    btn.addEventListener('click', () => {
+      const open = menu.classList.toggle('hidden') === false;
+      menu.classList.toggle('flex', open);
+      btn.setAttribute('aria-expanded', String(open));
+      btn.querySelector('.material-symbols-outlined').textContent = open ? 'close' : 'menu';
+    });
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      menu.classList.add('hidden'); menu.classList.remove('flex');
+      btn.setAttribute('aria-expanded', 'false');
+      btn.querySelector('.material-symbols-outlined').textContent = 'menu';
+    }));
+  })();
+
+  // Category switcher
+  const catBtns = document.querySelectorAll('.cat-btn');
+  const catPanels = document.querySelectorAll('[data-cat]');
+
+  function switchCat(target) {
+    catBtns.forEach(b => b.classList.toggle('active', b.dataset.target === target));
+    catPanels.forEach(p => {
+      if (p.dataset.cat === target) {
+        setTimeout(() => p.classList.add('cat-active'), 10);
+      } else {
+        p.classList.remove('cat-active');
+      }
+    });
+    const bar = document.getElementById('cat-tabs');
+    if (bar) window.scrollTo({ top: bar.getBoundingClientRect().top + window.pageYOffset - 90, behavior: 'smooth' });
+  }
+
+  catBtns.forEach(btn => btn.addEventListener('click', () => switchCat(btn.dataset.target)));
+</script>
+
+<div id="delivery-modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-label="Online sipariş platformları">
+  <div class="absolute inset-0 bg-on-surface/70 backdrop-blur-sm" onclick="document.getElementById('delivery-modal').classList.add('hidden')"></div>
+  <div class="relative bg-surface w-full max-w-md shadow-2xl z-10">
+    <div class="flex items-center justify-between px-8 pt-8 pb-6 border-b border-outline-variant/20">
+      <div>
+        <p class="font-label-sm text-primary uppercase tracking-[0.2em] mb-1">Online Sipariş</p>
+        <h2 class="font-headline-md text-[22px] text-on-surface font-semibold">Platform Seçin</h2>
+      </div>
+      <button onclick="document.getElementById('delivery-modal').classList.add('hidden')" class="text-on-surface-variant hover:text-primary transition-colors" aria-label="Kapat">
+        <span class="material-symbols-outlined text-2xl">close</span>
+      </button>
+    </div>
+    <div class="p-8 flex flex-col gap-4">
+      <a href="https://www.yemeksepeti.com/restaurant/ie1j/eagle-chinese-gastro-and-sushi-ie1j" target="_blank" rel="noopener"
+        class="flex items-center justify-between border border-outline-variant/30 px-6 py-4 hover:border-primary hover:bg-primary/5 transition-all duration-200 group">
+        <span class="font-label-lg uppercase tracking-[0.12em] text-on-surface group-hover:text-primary transition-colors">Yemeksepeti</span>
+        <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">arrow_forward</span>
+      </a>
+      <a href="https://getir.com/yemek/restoran/eagle-chinese-gastro-sushi-merkez-mah-sisli-istanbul/" target="_blank" rel="noopener"
+        class="flex items-center justify-between border border-outline-variant/30 px-6 py-4 hover:border-primary hover:bg-primary/5 transition-all duration-200 group">
+        <span class="font-label-lg uppercase tracking-[0.12em] text-on-surface group-hover:text-primary transition-colors">Getir Yemek</span>
+        <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">arrow_forward</span>
+      </a>
+      <a href="https://www.migros.com.tr/yemek/eagle-chinese-gastro-sushi-sisli-cumhuriyet-mah-st-18b54" target="_blank" rel="noopener"
+        class="flex items-center justify-between border border-outline-variant/30 px-6 py-4 hover:border-primary hover:bg-primary/5 transition-all duration-200 group">
+        <span class="font-label-lg uppercase tracking-[0.12em] text-on-surface group-hover:text-primary transition-colors">Migros Yemek</span>
+        <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

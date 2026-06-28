@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  body { overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+}
+
+@layer components {
+  .nav-link {
+    @apply font-label-lg text-label-lg uppercase tracking-[0.12em] text-on-surface-variant hover:text-primary transition-colors duration-300;
+  }
+  .nav-link-active {
+    @apply font-label-lg text-label-lg uppercase tracking-[0.12em] text-primary border-b border-primary pb-0.5;
+  }
+  .btn-primary {
+    @apply bg-primary text-on-primary px-8 py-4 font-label-lg text-label-lg uppercase tracking-[0.15em] hover:bg-on-surface transition-colors duration-300;
+  }
+  .btn-outline {
+    @apply border border-primary text-primary px-8 py-4 font-label-lg text-label-lg uppercase tracking-[0.15em] hover:bg-primary hover:text-on-primary transition-all duration-300;
+  }
+  .btn-sm {
+    @apply border border-primary text-primary px-4 py-2 font-label-sm text-[11px] uppercase tracking-[0.15em] hover:bg-primary hover:text-on-primary transition-all duration-300;
+  }
+  .section-label {
+    @apply font-label-lg text-label-lg uppercase tracking-[0.25em] text-primary mb-4 block;
+  }
+  .float-label-group { @apply relative; }
+  .float-label-input {
+    @apply peer w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 font-body-md text-on-surface transition-all;
+    outline: none;
+  }
+  .float-label-input::placeholder { color: transparent; }
+  .float-label {
+    @apply absolute left-0 top-3 font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant/70 transition-all pointer-events-none;
+  }
+  .float-label-input:focus ~ .float-label,
+  .float-label-input:not(:placeholder-shown) ~ .float-label {
+    @apply -top-4 text-[10px] text-primary;
+  }
+}
