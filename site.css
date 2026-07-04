@@ -25,3 +25,532 @@
     max-height: 112px;
   }
 }
+
+/* ===== Shared page intro system ===== */
+.page-main-offset {
+  padding-top: 160px;
+}
+
+.page-intro {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+  text-align: center;
+}
+
+.page-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+  color: #CC0000;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+}
+
+.page-kicker::before {
+  content: "";
+  width: 18px;
+  height: 1px;
+  background: #CC0000;
+  display: inline-block;
+}
+
+.page-title {
+  font-family: "Libre Caslon Text", serif;
+  font-size: clamp(42px, 5vw, 64px);
+  line-height: 1.04;
+  font-weight: 700;
+  color: #1b1c1c;
+  margin: 0;
+}
+
+.page-subtitle {
+  max-width: 680px;
+  margin: 24px auto 0;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #5d3f3c;
+}
+
+.page-title-rule {
+  width: 48px;
+  height: 2px;
+  background: #CC0000;
+  margin: 32px auto 0;
+}
+
+/* Animated hero — slow zoom (Ken Burns) + flame flicker on the wok image */
+.hero-fire {
+  will-change: transform, filter;
+  transform-origin: 60% 45%;
+  animation: heroKen 12s ease-in-out infinite alternate,
+             heroFlicker 1.9s ease-in-out infinite;
+}
+@keyframes heroKen {
+  from { transform: scale(1.05) translate(0, 0); }
+  to   { transform: scale(1.17) translate(-1.5%, -2.5%); }
+}
+@keyframes heroFlicker {
+  0%   { filter: brightness(1)    saturate(1); }
+  20%  { filter: brightness(1.18) saturate(1.22); }
+  40%  { filter: brightness(0.92) saturate(1.05); }
+  55%  { filter: brightness(1.24) saturate(1.28); }
+  70%  { filter: brightness(1)    saturate(1.1); }
+  85%  { filter: brightness(1.12) saturate(1.18); }
+  100% { filter: brightness(1)    saturate(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-fire { animation: none; }
+}
+
+/* ---- Softer, premium image framing (no harsh "ID-photo" edges) ---- */
+.gallery-item,
+.hero-frame,
+.shadow-2xl,
+.shadow-lg {
+  border-radius: 8px;
+}
+/* round direct <img> children that aren't clipped by overflow-hidden */
+.shadow-2xl > img,
+.shadow-lg > img {
+  border-radius: inherit;
+}
+/* soften the featured dish cards and testimonial cards too */
+article.hover-lift,
+figure.hover-lift {
+  border-radius: 8px;
+}
+
+.menu-section-title {
+  font-family: "Libre Caslon Text", serif;
+  font-size: clamp(30px, 3vw, 42px);
+  line-height: 1.15;
+  font-weight: 700;
+  font-style: normal;
+  color: #1b1c1c;
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.menu-subsection-title {
+  font-family: "Libre Caslon Text", serif;
+  font-size: clamp(22px, 2.2vw, 30px);
+  line-height: 1.2;
+  font-weight: 700;
+  font-style: normal;
+  color: #1b1c1c;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Soften photo shadows + corners — replaces Tailwind's punchy default
+   shadows with a diffuse, low-opacity glow and gentle rounding so images
+   don't read as hard-edged "passport photo" cutouts. */
+.shadow-2xl, .shadow-xl, .shadow-lg {
+  box-shadow: 0 24px 48px -16px rgba(27, 28, 28, 0.16), 0 8px 20px -10px rgba(27, 28, 28, 0.10) !important;
+}
+.shadow-sm, .shadow-md {
+  box-shadow: 0 8px 20px -10px rgba(27, 28, 28, 0.12) !important;
+}
+
+.legal-page-intro {
+  padding-bottom: 24px;
+}
+
+.legal-page-title {
+  font-size: clamp(32px, 4vw, 48px);
+}
+
+/* Menu category bar sits below the fixed navbar */
+.menu-cat-bar {
+  position: sticky;
+  top: 136px;
+  z-index: 40;
+}
+
+@media (max-width: 768px) {
+  .page-main-offset {
+    padding-top: 120px;
+  }
+
+  .page-intro {
+    padding: 36px 20px 48px;
+  }
+
+  .page-title {
+    font-size: clamp(34px, 10vw, 44px);
+  }
+
+  .page-subtitle {
+    font-size: 16px;
+  }
+
+  .page-kicker {
+    font-size: 11px;
+    letter-spacing: 0.24em;
+  }
+
+  .menu-cat-bar {
+    top: 108px;
+  }
+}
+
+/* Featured dishes (home page) — consistent media frame so sushi/chicken/
+   noodle photos with different native crops all read at the same scale.
+   Media frame is pure white so the photos' own white backgrounds blend in
+   instead of reading as a pasted-in square. */
+.featured-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.featured-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.featured-card-cta {
+  margin-top: auto;
+}
+
+.featured-card-media {
+  height: 320px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  border-bottom: 1px solid rgba(231, 189, 184, 0.35);
+}
+
+.featured-card-media img {
+  max-width: 86%;
+  max-height: 86%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.featured-card-media img.featured-sushi-img {
+  max-width: 94%;
+  max-height: 94%;
+}
+
+@media (max-width: 768px) {
+  .featured-card-media {
+    height: 250px;
+    padding: 22px;
+  }
+}
+
+/* ===== Gallery — premium horizontal scroll-snap strip (galeri.html) =====
+   Built entirely in plain CSS (not Tailwind arbitrary classes) so it never
+   depends on the precompiled tailwind.css containing the exact bracket
+   values used here. */
+.gallery-wrap {
+  position: relative;
+}
+
+.gallery-scroll {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 4px 4px 32px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.gallery-scroll::-webkit-scrollbar {
+  display: none;
+  height: 0;
+}
+
+.gallery-card {
+  position: relative;
+  flex: 0 0 auto;
+  width: 320px;
+  height: 440px;
+  overflow: hidden;
+  scroll-snap-align: start;
+  background: #f1ece8;
+}
+.gallery-card.is-wide {
+  width: 440px;
+}
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 1.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.gallery-card:hover img {
+  transform: scale(1.06);
+}
+
+.gallery-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.12) 55%, transparent);
+  pointer-events: none;
+}
+
+.gallery-card-caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 22px;
+  color: #ffffff;
+}
+.gallery-card-kicker {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0 0 5px;
+}
+.gallery-card-title {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 21px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.gallery-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(27, 28, 28, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 12px 24px -8px rgba(27, 28, 28, 0.22);
+  transition: background 0.2s ease;
+}
+.gallery-nav-btn:hover {
+  background: #ffffff;
+}
+.gallery-nav-btn.prev {
+  left: -4px;
+}
+.gallery-nav-btn.next {
+  right: -4px;
+}
+
+@media (max-width: 900px) {
+  .gallery-nav-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-card {
+    width: 250px;
+    height: 340px;
+  }
+  .gallery-card.is-wide {
+    width: 280px;
+  }
+  .gallery-scroll {
+    gap: 12px;
+    padding: 4px 4px 24px;
+  }
+  .gallery-card-caption {
+    padding: 16px;
+  }
+  .gallery-card-title {
+    font-size: 18px;
+  }
+}
+
+/* Gallery closing quote — calm and premium, not theatrical */
+.gallery-quote {
+  max-width: 720px;
+  margin: 0 auto 48px;
+  text-align: center;
+  font-family: "Libre Caslon Text", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.35;
+  color: #5d3f3c;
+}
+
+@media (max-width: 768px) {
+  .gallery-quote {
+    font-size: 22px;
+    margin-bottom: 36px;
+  }
+}
+
+/* About page — bring story and values up to the same desktop scale as Menu/Gallery/Contact */
+.about-shell {
+  width: 100%;
+  max-width: 1180px;
+}
+
+.about-story-grid {
+  grid-template-columns: minmax(0, 1.04fr) minmax(420px, 0.96fr);
+  gap: clamp(48px, 6vw, 88px);
+}
+
+.about-story-section {
+  padding-top: 24px;
+}
+
+.about-story-image {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #f5eee8;
+}
+
+.about-story-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 72% center;
+  display: block;
+}
+
+.about-story-badge {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: rgba(251, 248, 246, 0.96);
+  border: 1px solid rgba(231, 189, 184, 0.5);
+  box-shadow: 0 12px 24px -14px rgba(27, 28, 28, 0.28);
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #5d3f3c;
+}
+
+.about-story-badge::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #CC0000;
+  flex: 0 0 auto;
+}
+
+.about-story-copy {
+  max-width: 560px;
+}
+
+.about-story-text {
+  max-width: 540px;
+  font-size: 18px;
+  line-height: 1.82;
+}
+
+.about-quote {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  background: #fbf8f6;
+}
+
+.about-quote-copy {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Libre Caslon Text", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.35;
+  color: #5d3f3c;
+}
+
+.about-quote-actions {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.about-value-card {
+  min-height: 260px;
+}
+
+.about-value-card p {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.about-values-cta {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .about-story-grid {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .about-story-badge {
+    left: 20px;
+    bottom: 20px;
+    padding: 10px 14px;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+  }
+
+  .about-story-copy,
+  .about-story-text {
+    max-width: none;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .about-story-section {
+    padding-top: 24px;
+  }
+
+  .about-story-text,
+  .about-value-card p {
+    font-size: 16px;
+  }
+
+  .about-quote {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .about-quote-copy {
+    font-size: 22px;
+  }
+
+  .about-story-cta {
+    display: none;
+  }
+
+  .about-values-cta {
+    display: flex;
+  }
+}

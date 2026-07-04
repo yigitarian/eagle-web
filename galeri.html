@@ -9,8 +9,8 @@
 <link rel="alternate" hreflang="tr" href="https://eaglechinese.com.tr/galeri.html"/>
 <link rel="alternate" hreflang="en" href="https://eaglechinese.com.tr/galeri-en.html"/>
 <link rel="alternate" hreflang="x-default" href="https://eaglechinese.com.tr/galeri.html"/>
-<link rel="icon" type="image/png" href="logo-crop.png"/>
-<link rel="apple-touch-icon" href="logo-crop.png"/>
+<link rel="icon" type="image/png" href="favicon.png"/>
+<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
 <meta name="theme-color" content="#CC0000"/>
 <meta name="robots" content="index, follow"/>
 <!-- Open Graph -->
@@ -20,22 +20,18 @@
 <meta property="og:title" content="Galeri | EAGLE Chinese Gastro &amp; Sushi"/>
 <meta property="og:description" content="EAGLE Chinese Gastro &amp; Sushi galeri — Şişli Bomonti'deki restoranımızdan lezzet ve atmosfer fotoğrafları."/>
 <meta property="og:url" content="https://eaglechinese.com.tr/galeri.html"/>
-<meta property="og:image" content="https://lh3.googleusercontent.com/aida-public/AB6AXuB6YeN7KV7b-M-hf1F52czT_n1Kzce6xHisAbMmFkKxcRMgQHjmVfqm2P0vjJzUwiEgpsAowgAbzE4THIurjdUhoi_koCTOzp_0pKu0WaBtUNixo0SCc3OVcKMz2Fa7CD6dDWWBF0ruXTW-0780ebe8VTgzzFvL5kzeLuadsAg7QhTMYvFND886QO0lj0Wzt4O5BvrfM_XYMLul42lgtfE8naEZgv3dEo8R1JWsPhCmYiT7zufZ7zhGZg"/>
+<meta property="og:image" content="food-ys-3574715.jpg"/>
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Galeri | EAGLE Chinese Gastro &amp; Sushi"/>
 <meta name="twitter:description" content="EAGLE Chinese Gastro &amp; Sushi galeri — Şişli Bomonti'deki restoranımızdan lezzet ve atmosfer fotoğrafları."/>
-<meta name="twitter:image" content="https://lh3.googleusercontent.com/aida-public/AB6AXuB6YeN7KV7b-M-hf1F52czT_n1Kzce6xHisAbMmFkKxcRMgQHjmVfqm2P0vjJzUwiEgpsAowgAbzE4THIurjdUhoi_koCTOzp_0pKu0WaBtUNixo0SCc3OVcKMz2Fa7CD6dDWWBF0ruXTW-0780ebe8VTgzzFvL5kzeLuadsAg7QhTMYvFND886QO0lj0Wzt4O5BvrfM_XYMLul42lgtfE8naEZgv3dEo8R1JWsPhCmYiT7zufZ7zhGZg"/>
+<meta name="twitter:image" content="food-ys-3574715.jpg"/>
 
 <link rel="stylesheet" href="tailwind.css"/>
-<link rel="stylesheet" href="site.css"/>
+<link rel="stylesheet" href="site.css?v=9"/>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <style>
-  /* Gallery: JS controls the transform; CSS only provides base transition */
-  .gallery-item img {
-    transition: transform 1.6s cubic-bezier(0.19,1,0.22,1);
-  }
   .fade-up-enter { opacity:0; transform:translateY(28px); transition:opacity .9s ease-out, transform .9s cubic-bezier(.2,.8,.2,1); }
   .fade-up-enter-active { opacity:1; transform:translateY(0); }
 </style>
@@ -79,55 +75,114 @@
   </ul>
 </nav>
 
-<main class="pt-24 md:pt-28 pb-section-gap">
-  <!-- Hero Header -->
-  <header class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-12 text-center flex flex-col items-center">
-    <span class="section-label fade-up-enter">— Fotoğraflar</span>
-    <h1 class="text-4xl md:text-5xl font-bold text-on-surface mt-3 mb-4 fade-up-enter" style="transition-delay:100ms;">Galeri</h1>
-    <p class="text-base text-on-surface-variant max-w-sm fade-up-enter" style="transition-delay:200ms;">Lezzetlerimizden ve restoran atmosferimizden seçkiler.</p>
-  </header>
+<main class="page-main-offset pb-section-gap">
+  <!-- Page intro -->
+  <section class="page-intro">
+    <span class="page-kicker">Fotoğraflar</span>
+    <h1 class="page-title">Galeri</h1>
+    <p class="page-subtitle">Lezzetlerimizden ve restoran atmosferimizden seçkiler.</p>
+    <div class="page-title-rule"></div>
+  </section>
 
-  <!-- Gallery -->
-  <section class="px-2 md:px-4">
+  <!-- Gallery: premium horizontal scroll-snap strip -->
+  <section class="px-margin-mobile md:px-margin-desktop">
+    <div class="gallery-wrap max-w-container-max mx-auto">
+      <div class="gallery-scroll" id="gallery-scroll">
 
-    <!-- Row 1: büyük sol + dar sağ -->
-    <div class="flex flex-col md:flex-row gap-2 mb-2">
-      <div class="gallery-item overflow-hidden bg-surface-container h-[45vw] md:h-[300px] md:flex-[7]">
-        <img alt="Premium sushi tabağı" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6YeN7KV7b-M-hf1F52czT_n1Kzce6xHisAbMmFkKxcRMgQHjmVfqm2P0vjJzUwiEgpsAowgAbzE4THIurjdUhoi_koCTOzp_0pKu0WaBtUNixo0SCc3OVcKMz2Fa7CD6dDWWBF0ruXTW-0780ebe8VTgzzFvL5kzeLuadsAg7QhTMYvFND886QO0lj0Wzt4O5BvrfM_XYMLul42lgtfE8naEZgv3dEo8R1JWsPhCmYiT7zufZ7zhGZg"/>
-      </div>
-      <div class="gallery-item overflow-hidden bg-surface-container h-[45vw] md:h-[300px] md:flex-[5]">
-        <img alt="Restoran iç mekan" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEywRGIo8QQp3F8-KBSKo7rSX31TYYo1UQp5FWbTXcEO9EaVI-V8Axx1y8kaRTCnVYGKLcS2lPTM76Fjul2_Ot_qJRArIUqs5NJxbIOp-ATa3VkxY0KNvhO0WhxYERGj35uq3UoBSqxqp9PXICYhmlX40Wdgt0JsOCWl29S0kQhwP1uk8BonLsVWDqYzR3U7d-5d9o1fFkEin2d_4UFzawDVUblVjXRyT52T-qN2iI-l8mpjdyNtZiDw"/>
-      </div>
-    </div>
+        <div class="gallery-card is-wide">
+          <img alt="EAGLE Chinese Gastro & Sushi dış cephe — akşam" src="storefront-night.jpg"/>
+          <div class="gallery-card-overlay"></div>
+          <div class="gallery-card-caption">
+            <p class="gallery-card-kicker">Atmosfer</p>
+            <h3 class="gallery-card-title">Akşam Atmosferi</h3>
+          </div>
+        </div>
 
-    <!-- Row 2: tam genişlik -->
-    <div class="gallery-item overflow-hidden bg-surface-container h-[28vw] md:h-[240px] mb-2">
-      <img alt="Restoran lounge alanı" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1ZqoIXkhsC_d4tb93T6cgkFzWbS3vwjnJkYOUENK8Q-7xksHFRp7efv11muXsoFjQFLeQn4cEHBqbtj3WOppoNvCygElRWSQm-SuittXR9OvEKXDuxdb7m9e3dfxY130qTBuRWT-dIGAWB9-axZE9Os4Eu8TyXEXcOH6haJBJ8SlKZjBIPmHUUEORxmeFp9Gp7mslfWLntVnFVcrmM1DQL2lE6KcPhZiuEswhlwe-VWsdYcAGrkDSPQ"/>
-    </div>
+        <div class="gallery-card">
+          <img alt="EAGLE Chinese Gastro & Sushi dış cephe — gündüz" src="storefront-day.jpg"/>
+          <div class="gallery-card-overlay"></div>
+          <div class="gallery-card-caption">
+            <p class="gallery-card-kicker">Mekanımız</p>
+            <h3 class="gallery-card-title">Bomonti'de EAGLE</h3>
+          </div>
+        </div>
 
-    <!-- Row 3: üç eşit -->
-    <div class="flex flex-col md:flex-row gap-2 mb-20">
-      <div class="gallery-item overflow-hidden bg-surface-container h-[45vw] md:h-[300px] md:flex-1">
-        <img alt="Wok pişirme" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCePXMXoTaEhF7kon1gp-tpNPko0MPsUJ2T7a5xv3oYnpLOF0iDts4FvxNlEnI1s8K4xOgfFYVbDRaX9zV9GILAiKx4VfpHBnZjyraAl8LsQAF8F3Fo0oyn_4wcr32N5CDL9puocwLxZQkRo3-2CRLJ_od85jMqMuCmsUyDvxrJ_OLCiQtHkKKR1QNkb1cgDcQ50tMGnHJWdn4FQHPUiainYIDFp69ARTxF3rT5StGGjceQTKrZaKu3yA"/>
+        <div class="gallery-card is-wide">
+          <img alt="EAGLE restoran masa düzeni" src="interior-tables.jpg"/>
+          <div class="gallery-card-overlay"></div>
+          <div class="gallery-card-caption">
+            <p class="gallery-card-kicker">Atmosfer</p>
+            <h3 class="gallery-card-title">Masamızda</h3>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img alt="Sushi seçkisi bambu tepside" src="sushi-platters.jpg"/>
+          <div class="gallery-card-overlay"></div>
+          <div class="gallery-card-caption">
+            <p class="gallery-card-kicker">Sushi</p>
+            <h3 class="gallery-card-title">Sushi Seçkisi</h3>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img alt="Çıtır kaplamalı özel roll" src="sushi-crispyroll.jpg"/>
+          <div class="gallery-card-overlay"></div>
+          <div class="gallery-card-caption">
+            <p class="gallery-card-kicker">Sushi</p>
+            <h3 class="gallery-card-title">Özel Roll</h3>
+          </div>
+        </div>
+
+        <div class="gallery-card is-wide">
+          <img alt="EAGLE imza sushi sunumu" src="sushi-sandwich.jpg"/>
+          <div class="gallery-card-overlay"></div>
+          <div class="gallery-card-caption">
+            <p class="gallery-card-kicker">Sushi</p>
+            <h3 class="gallery-card-title">İmza Sunum</h3>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img alt="Çıtır mantı sepeti" src="crispy-wonton.jpg"/>
+          <div class="gallery-card-overlay"></div>
+          <div class="gallery-card-caption">
+            <p class="gallery-card-kicker">Başlangıçlar</p>
+            <h3 class="gallery-card-title">Çıtır Mantı</h3>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img alt="Wok tavuk kasesi" src="wok-chicken-bowl.jpg"/>
+          <div class="gallery-card-overlay"></div>
+          <div class="gallery-card-caption">
+            <p class="gallery-card-kicker">Uzak Doğu</p>
+            <h3 class="gallery-card-title">Wok Tavuk</h3>
+          </div>
+        </div>
+
+        <div class="gallery-card is-wide">
+          <img alt="EAGLE wok noodle" src="g-noodle.jpg"/>
+          <div class="gallery-card-overlay"></div>
+          <div class="gallery-card-caption">
+            <p class="gallery-card-kicker">İmza Lezzet</p>
+            <h3 class="gallery-card-title">Wok Noodle</h3>
+          </div>
+        </div>
+
       </div>
-      <div class="gallery-item overflow-hidden bg-surface-container h-[45vw] md:h-[300px] md:flex-1">
-        <img alt="Şef maki sarıyor" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMY6D__cs-gH9IvKRz0j7DpBLFAeKouh39jpMURfgfKQ6s66-Nb7EXGPrWkK4V_agAyCeGklqdGPQDofuwxMnU6OQh_0JluLlEiyauu60KSDXzp9flZJLF8lwT_lhTtqT4Ca88Wd7NrD2uh5KSoNnEP159U3HnoK-BroJQd0EKscY3Gx6XlCspsbcY4KIcFCVUBI9HEzBdU2X_qaCKl5QcptBJWvoA5EIJOQQPWaW5kbwZHX_O_DwxPg"/>
-      </div>
-      <div class="gallery-item overflow-hidden bg-surface-container h-[45vw] md:h-[300px] md:flex-1">
-        <img alt="Ramen çorba kasesi" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFREfnQ1a2mfyDZmHb8ABmQJ2NYMC7lLA0Dbpp4o411wDwGm5fzpOcxIYP9yAbGSYjSmNxJoPXZU-Hn1kHWNH6qLuOZB1WWj2gOhYoMTGwg_8mhmTosApMnA5Sb_vQ-wYKvx-g8MjE7dMqE1mf604ct1vd8OYjhiYXqaQlFBtG6BgNZ1WDODfqvvcrQ30aHYJ10zcXjizrKAJsXYjMvneJLShdT31z8wDD0rnyEGulhNJRkrtyMq7nXw"/>
-      </div>
+      <button class="gallery-nav-btn prev" aria-label="Önceki fotoğraflar" onclick="document.getElementById('gallery-scroll').scrollBy({left:-360,behavior:'smooth'})">
+        <span class="material-symbols-outlined">chevron_left</span>
+      </button>
+      <button class="gallery-nav-btn next" aria-label="Sonraki fotoğraflar" onclick="document.getElementById('gallery-scroll').scrollBy({left:360,behavior:'smooth'})">
+        <span class="material-symbols-outlined">chevron_right</span>
+      </button>
     </div>
 
     <!-- CTA -->
     <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center pb-24">
-      <p class="font-headline-md text-[24px] md:text-[34px] italic text-on-surface/75 max-w-2xl mx-auto mb-10 leading-snug font-semibold">
-        "Her tabağımız, geleneksel tekniklerin modern vizyonumuzla birleştiği bir sanat eseridir."
+      <p class="gallery-quote">
+        "Lezzet, atmosfer ve özenli servis; EAGLE deneyiminin merkezinde."
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a href="iletisim.html" class="btn-primary inline-block">Rezervasyon Yap</a>
@@ -184,7 +239,7 @@
             <li><a class="text-surface/80 hover:text-primary transition-colors" href="https://www.tripadvisor.com/Restaurant_Review-g293974-d8706764-Reviews-Eagle_Chinese_Gastro-Istanbul.html" target="_blank" rel="noopener">TripAdvisor</a></li>
             <li><a class="text-surface/80 hover:text-primary transition-colors" href="https://www.yemeksepeti.com/restaurant/ie1j/eagle-chinese-gastro-and-sushi-ie1j" target="_blank" rel="noopener">Yemeksepeti</a></li>
             <li><a class="text-surface/80 hover:text-primary transition-colors" href="https://getir.com/yemek/restoran/eagle-chinese-gastro-sushi-merkez-mah-sisli-istanbul/" target="_blank" rel="noopener">Getir</a></li>
-            <li><a class="text-surface/80 hover:text-primary transition-colors" href="https://www.migros.com.tr/yemek/eagle-chinese-gastro-sushi-sisli-cumhuriyet-mah-st-18b54" target="_blank" rel="noopener">Migros Yemek</a></li>
+            <li><a class="text-surface/80 hover:text-primary transition-colors" href="https://www.migros.com.tr/yemek/eagle-chinese-gastro-sushi-sisli-cumhuriyet-mah-st-18b54?srsltid=AfmBOorRPrM-hLzipmbMt3wacnbuPpyi-mzlOApn7coOJhNm33lO10HQ" target="_blank" rel="noopener">Migros Yemek</a></li>
           </ul>
         </div>
 
@@ -234,34 +289,8 @@
     });
   });
 
-  // Parallax — tracks hover state to avoid conflicting transforms
-  const hoveredItems = new Set();
-  document.querySelectorAll('.gallery-item').forEach(item => {
-    item.addEventListener('mouseenter', () => {
-      hoveredItems.add(item);
-      const img = item.querySelector('img');
-      if (img) img.style.transform = 'scale(1.07)';
-    });
-    item.addEventListener('mouseleave', () => {
-      hoveredItems.delete(item);
-      const img = item.querySelector('img');
-      if (img) img.style.transform = ''; // let scroll handler re-apply
-    });
-  });
-
   window.addEventListener('scroll', () => {
     requestAnimationFrame(() => {
-      const wh = window.innerHeight;
-      document.querySelectorAll('.gallery-item img').forEach(img => {
-        const item = img.parentElement;
-        if (hoveredItems.has(item)) return; // don't override hover
-        const rect = item.getBoundingClientRect();
-        if (rect.top < wh && rect.bottom > 0) {
-          const offset = (rect.top + rect.height / 2 - wh / 2) * 0.04;
-          img.style.transform = `scale(1.05) translateY(${offset}px)`;
-        }
-      });
-
       // Navbar shrink
       const navbar = document.getElementById('navbar');
       if (window.scrollY > 60) {
@@ -296,9 +325,14 @@
         <span class="font-label-lg uppercase tracking-[0.12em] text-on-surface group-hover:text-primary transition-colors">Getir Yemek</span>
         <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">arrow_forward</span>
       </a>
-      <a href="https://www.migros.com.tr/yemek/eagle-chinese-gastro-sushi-sisli-cumhuriyet-mah-st-18b54" target="_blank" rel="noopener"
+      <a href="https://www.migros.com.tr/yemek/eagle-chinese-gastro-sushi-sisli-cumhuriyet-mah-st-18b54?srsltid=AfmBOorRPrM-hLzipmbMt3wacnbuPpyi-mzlOApn7coOJhNm33lO10HQ" target="_blank" rel="noopener"
         class="flex items-center justify-between border border-outline-variant/30 px-6 py-4 hover:border-primary hover:bg-primary/5 transition-all duration-200 group">
         <span class="font-label-lg uppercase tracking-[0.12em] text-on-surface group-hover:text-primary transition-colors">Migros Yemek</span>
+        <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">arrow_forward</span>
+      </a>
+      <a href="https://tgoyemek.com/restoranlar/674" target="_blank" rel="noopener"
+        class="flex items-center justify-between border border-outline-variant/30 px-6 py-4 hover:border-primary hover:bg-primary/5 transition-all duration-200 group">
+        <span class="font-label-lg uppercase tracking-[0.12em] text-on-surface group-hover:text-primary transition-colors">Trendyol Go</span>
         <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">arrow_forward</span>
       </a>
     </div>
